@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <test name="GroupMethod(failed)">
+    <groups>
+      <run>
+        <include name="group2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.codee.cli.SimpleLoginCode">
+        <methods>
+          <include name="PageNavigation1"/>
+        </methods>
+      </class> <!-- com.codee.cli.SimpleLoginCode -->
+    </classes>
+  </test> <!-- GroupMethod(failed) -->
+</suite> <!-- Failed suite [Regression] -->

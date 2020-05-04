@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+<test name="GroupMethod">
+<groups>
+<define name="group1">
+<include name="Login"/>
+</define>
+<define name="group2">
+<include name="Page"/>
+</define>
+<run>
+<include name="group2"/>
+</run>
+</groups>
+<classes>
+<class name="com.codee.cli.SimpleLoginCode"/>
+</classes>
+</test>
+</suite>
